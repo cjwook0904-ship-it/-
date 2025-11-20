@@ -1,10 +1,10 @@
 import React, { useState, useCallback } from 'react';
 import { AspectRatio, GeneratedImage, GenerationMode } from './types';
-import { generateImageFromPrompt, editImage } from './geminiService';
-import ControlPanel from './ControlPanel';
-import DisplayArea from './DisplayArea';
-import HistoryGrid from './HistoryGrid';
-import { WandIcon } from './Icons';
+import { generateImageFromPrompt, editImage } from './services/geminiService';
+import ControlPanel from './components/ControlPanel';
+import DisplayArea from './components/DisplayArea';
+import HistoryGrid from './components/HistoryGrid';
+import { WandIcon } from './components/Icons';
 
 const App: React.FC = () => {
   // State
